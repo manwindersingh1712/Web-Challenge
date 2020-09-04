@@ -1,0 +1,98 @@
+#top{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    margin:auto;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/fQ3rjuW46d9rGAZRoanXdK-1200-80.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+#main.active{
+
+    height: 100vh;
+    z-index: 100;
+    background: white;
+    animation-name: laptop;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-delay: 1s;
+}
+
+@keyframes laptop{
+
+  0%{
+    height: 100vh;
+    z-index:2;
+    margin:0;
+    overflow:scroll;
+   }
+
+100%{
+  height: 68vh;
+  z-index:2;
+  margin-top: 9vh;
+  margin-left:24vw;
+  margin-right: 24vw;
+  overflow:scroll;
+  border-radius: 2%;
+}
+}
+
+#navbar{
+  background-color: teal;
+  height:40px;
+  display: flex;
+  align-items: center;
+
+}
+
+#all{
+display: flex;
+list-style: none;
+}
+
+#items.active{
+  color:black;
+}
+
+#items{
+  margin:0.5em;
+  padding:0.1rem ;
+  font-size: 10px;
+  color:white;
+  text-decoration:none;
+  list-style: none;
+cursor: pointer;
+}
+
+#items:hover{
+  color: Black;
+}
+
+#details{
+  height: 100vh;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;
+}
+.bio{
+  display: flex;
+  align-items: center;
+}
+.image{
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+}
+
+img{
+        margin:10px;
+        width:50%;
+        height: 50%;
+        border-radius: 50%;
+}
+
+
+

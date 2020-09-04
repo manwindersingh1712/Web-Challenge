@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#top{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    margin:auto;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/fQ3rjuW46d9rGAZRoanXdK-1200-80.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+img{
+    margin:10px;
+    width:50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+#main{
+    background-color: white;
+    height: 68vh;
+  z-index:2;
+  margin-top: 9vh;
+  margin-left:24vw;
+  margin-right: 24vw;
+  overflow:scroll;
+  border-radius: 2%;
+}
+
+
+#navbar{
+    background-color: teal;
+    height:40px;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  #all{
+  display: flex;
+  list-style: none;
+  }
+  
+  #items.active{
+    color:black;
+  }
+  
+  #items{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin:0.5em;
+    padding:0.1rem ;
+    font-size: 0.7rem;
+    font-family: consolas;
+    color:white;
+    text-decoration:none;
+    list-style: none;
+  cursor: pointer;
+  }
+  
+  #items:hover{
+    color: Black;
+  }
+  
+  #details{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+
+
+  }
+  .bio{
+    display: flex;
+    align-items: center;
+  }
+  .image{
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+  }
+  
+
+#right{
+  display: flex;
+  justify-items: flex-end;
+  padding-left: 80px;
+}

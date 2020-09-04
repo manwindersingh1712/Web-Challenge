@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../utils/fixed.css">
+
+</head>
+<body>
+
+   
+<!-- ************************************THE MAIN PAGE******************************************** -->
+
+<div id="top">
+
+    <div id="main" >
+
+<nav id="navbar">
+    <ul id="all">
+        <li>
+            <a id="items" href="../public/main.html">Home</a>
+        </li>
+        <li>
+            <a href="../public/portfolio.html" id="items" class="active">Portfolio</a>
+        </li>
+        <li>
+            <a id="items" href="../public/contact.html">Contact Me</a>
+        </li>
+    </ul>
+</nav>
+
+<div id="details">
+    <div class="image">
+        <img src="../images/DSC_0059.JPG" alt="profile">
+    </div>
+    <div class="bio"> My name is Manwinder Singh . I am a hard-working engineering student specialised 
+        in computer science engineering.
+        
+        Along with my degree , i have completed node.js,vanilla.js and mongodb courses on udemy.The various technologies that i have learnt 
+        have helped me develop many projects since my 1st sem. named the great rgb game , and many more. It was during the project , i discovered 
+        that i am a team player.
+
+    </div>
+    <div>
+        <h2>What it takes to be a good developer?</h2>
+        The range of skills required to become a “great” developer is vast, with low-level skills that range from a solid sense of mathematics to high-level skills like user-interface design.
+        If you are learning how to play an instrument, it’s no question for most people that you can’t get anywhere until you pick up the instrument and try to play it. And it’s not just once in awhile, either. Instrument practice is something most musicians do every day. Even if they are professionals.
+
+Learning theory and exploring new ideas is, obviously, essential to improving yourself in any discipline. The most important step, though, is turning those concepts into engrained knowledge and muscle memory. In this way, programming is a lot like learning an instrument.
+    </div>
+    <div id="right">
+        <img src="../images/develop.jpg" alt="">
+    </div>
+</div>
+    
+   
+</div>
+
+</div>
+<!-- *********************************************************************************************** -->
+    <script type="text/javascript">
+    function change(){
+        var curtain=document.getElementById('curtain');
+        var laptop=document.getElementById('main');
+        main.classList.toggle('active');
+        curtain.classList.toggle('active');
+        var btn=document.getElementsByTagName('a')
+        console.log(btn);
+        btn[0].remove();
+    }
+    </script>
+    
+</body>
+</html>
