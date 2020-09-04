@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 105vh;
+    overflow-x: hidden;
+}
+
+.laptopImg {
+    background-image: url("./laptop_png.png");
+    margin: auto;
+    height: 50%;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    /* Resize the background image to cover the entire container */
+
+
+}
+
+.imgContainer {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    display: none;
+}
+
+
+.webpage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    transition: .5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.webpage h3 {
+    text-align: center;
+}
+
+.webpage button {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.scaledDiv {
+    position: relative;
+    transform: scale(.28, .5);
+    top: -32px;
+
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgb(221 123 39 / 90%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    color: #f7eaea;
+    font-family: sans-serif;
+}
+
+.overlay h1 {
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+
+    .scaledDiv {
+        transform: scale(.4, .5);
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .scaledDiv {
+        transform: scale(.45, .6);
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .scaledDiv {
+        transform: scale(.75, .42)
+    }
+}
